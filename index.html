@@ -108,8 +108,8 @@
                 <h2>간편하고 스마트한 <b>ASTA Wallet</b></h2>
                 <div class="section_act">
                     <div class="video">
-                        <video muted autoplay loop style="width:100%;">
-                            <source src="./img/w_1.MP4" type="video/mp4">
+                        <video muted autoplay loop style="width:100%;height:100%">
+                            <source src="https://korfinholdings.com/img/w_1.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div class="section_act_info">
@@ -134,20 +134,20 @@
                         </div>
                     </div>
                     <div class="tab_img1 video">
-                        <video muted autoplay loop style="width:100%;">
-                            <source src="./img/w_2-1.MP4" type="video/mp4">
+                        <video muted autoplay loop style="width:100%;height:100%">
+                            <source src="https://korfinholdings.com/img/w_2-1.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div class="tab_img2 video" style="display: none;">
-                        <video muted autoplay loop style="width:100%;">
-                            <source src="./img/w_2-2.MP4" type="video/mp4">
+                        <video muted autoplay loop style="width:100%;height:100%">
+                            <source src="https://korfinholdings.com/img/w_2-2.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div class="section_act">
                     <div class="order video">
-                        <video muted autoplay loop style="width:100%;">
-                            <source src="./img/w_3.MP4" type="video/mp4">
+                        <video muted autoplay loop style="width:100%;height:100%">
+                            <source src="https://korfinholdings.com/img/w_3.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div class="section_act_info">
@@ -180,8 +180,8 @@
                 </p>
                 <div class="section_act">
                     <div class="order video">
-                        <video muted autoplay loop style="width:100%;">
-                            <source src="./img/v_1.MP4" type="video/mp4">
+                        <video muted autoplay loop style="width:100%;height:100%">
+                            <source src="https://korfinholdings.com/img/v_1.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div class="section_act_info">
@@ -197,15 +197,15 @@
                         <p>매주 진행되는 브랜드 기획전을 통해<br />어디에서도 볼 수 없는 가격을 만나보세요.</p>
                     </div>
                     <div class="mt-130 video">
-                        <video muted autoplay loop style="width:100%;">
-                            <source src="./img/v_2.MP4" type="video/mp4">
+                        <video muted autoplay loop style="width:100%;height:100%">
+                            <source src="https://korfinholdings.com/img/v_2.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div class="section_act">
                     <div class="order video">
-                        <video muted autoplay loop style="width:100%;">
-                            <source src="./img/v_3.MP4" type="video/mp4">
+                        <video muted autoplay loop style="width:100%;height:100%">
+                            <source src="https://korfinholdings.com/img/v_3.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div class="section_act_info">
@@ -358,29 +358,26 @@
     var store;
     $(document).ready(function(){
         var mobile = (/iphone|ipad|ipod|android/i.test(navigator.userAgent.toLowerCase()));
-        if (mobile) {  //navigator.userAgent에 /iphone|ipad|ipod|android 의 단어포함이 true 일때
-            // 유저에이전트를 불러와서 OS를 구분합니다.
+        if (mobile) {
             var userAgent = navigator.userAgent.toLowerCase();
             if (userAgent.search("android") > -1){
                 $('.store').click(function(){
-                var url = "https://play.google.com/store/apps/details?id=io.astawallet.viichainteam"
-                window.open(url, "_blank");  
-            })
+                    var url = "https://play.google.com/store/apps/details?id=io.astawallet.viichainteam"
+                    window.open(url, "_blank");  
+                })
             }
             else if ((userAgent.search("iphone") > -1) || (userAgent.search("ipod") > -1) || (userAgent.search("ipad") > -1)){
                 $('.store').click(function(){
-                var url = "https://apps.apple.com/kr/app/asta-wallet/id1550901004"
-                window.open(url, "_blank");  
-            })
+                    var url = "https://apps.apple.com/kr/app/asta-wallet/id1550901004"
+                    window.open(url, "_blank");  
+                })
             }
         } else {
-            // 모바일이 아닐 때
             $('.store').click(function(){
                 var url = "https://play.google.com/store/apps/details?id=io.astawallet.viichainteam"
                 window.open(url, "_blank");  
             })
         }
     });
-    
 </script>
 </html> 
