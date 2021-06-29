@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
 /* Web Design developer : CWJ */
 
 body, input, select, textarea, button {font-family:"Noto Sans KR","돋움",dotum,"굴림",gulim,Arial,Helvetica,sans-serif; font-size:27px;letter-spacing:-1px;}
